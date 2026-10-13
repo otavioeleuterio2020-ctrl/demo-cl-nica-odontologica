@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Clínica Odontológica | Dentista e cuidado com o seu sorriso</title>
+<meta name="description" content="Clínica odontológica com atendimento personalizado, prevenção e cuidado com a saúde bucal. Agende sua consulta pelo WhatsApp.">
+<meta property="og:title" content="Clínica Odontológica — Seu sorriso merece um cuidado extraordinário">
+<meta property="og:image" content="img/consultorio.jpg">
+<meta name="theme-color" content="#0f3b47">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;1,6..72,300&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip" href="#conteudo">Ir para o conteúdo</a>
+
+<header id="topo" class="hdr">
+  <a class="brand" href="#inicio" aria-label="Início"><span class="mark" aria-hidden="true"></span><span data-c="nome">Clínica Odontológica</span></a>
+  <button class="burger" aria-expanded="false" aria-controls="menu" aria-label="Abrir menu"><i></i><i></i></button>
+  <nav id="menu" aria-label="Principal">
+    <a href="#clinica">A clínica</a><a href="#tratamentos">Tratamentos</a>
+    <a href="#equipe" data-team hidden>Equipe</a><a href="#diferenciais">Diferenciais</a>
+    <a href="#galeria">Galeria</a><a href="#local">Localização</a><a href="#contato">Contato</a>
+    <a class="btn btn-sm" data-wa href="#contato">Agendar consulta</a>
+  </nav>
+</header>
+
+<main id="conteudo">
+<section id="inicio" class="hero">
+  <div class="hero-text">
+    <h1>Seu sorriso merece um cuidado extraordinário.</h1>
+    <p>Cuidado odontológico personalizado, atenção à saúde bucal e valorização do seu sorriso em um ambiente acolhedor.</p>
+    <div class="actions"><a class="btn" data-wa href="#contato">Agendar uma consulta</a><a class="btn btn-ghost" href="#clinica">Conhecer a clínica</a></div>
+  </div>
+  <div class="hero-art">
+    <div class="arch"><img src="img/consultorio.jpg" alt="Consultório odontológico claro com cadeira azul e painel de radiografia" fetchpriority="high"></div>
+    <figure class="float"><img src="img/procedimento.jpg" alt="Detalhe em preto e branco de um atendimento odontológico"></figure>
+  </div>
+</section>
+
+<section id="clinica" class="sec split">
+  <figure class="tall"><img loading="lazy" src="img/microscopio.jpg" alt="Sala de atendimento com microscópio clínico e monitor de exames"></figure>
+  <div class="copy">
+    <h2>Tecnologia a serviço de uma conversa clara.</h2>
+    <p>Acreditamos que um bom tratamento começa com escuta. Explicamos cada etapa, mostramos seus exames e decidimos o próximo passo junto com você.</p>
+    <p>Nosso foco é a saúde bucal a longo prazo: prevenção, acompanhamento e um ambiente organizado, pensado para que você se sinta à vontade.</p>
+    <dl class="facts">
+      <div><dt>Atendimento personalizado</dt><dd>Cada plano é montado a partir da sua avaliação.</dd></div>
+      <div><dt>Orientação transparente</dt><dd>Você entende o que será feito antes de começar.</dd></div>
+    </dl>
+  </div>
+</section>
+
+<section id="tratamentos" class="sec sand">
+  <div class="head"><h2>Tratamentos</h2><p>Do primeiro exame à manutenção do sorriso. Fale com a equipe para saber qual caminho faz sentido no seu caso.</p></div>
+  <div class="cards" id="servicos"></div>
+</section>
+
+<section id="equipe" class="sec" data-team hidden>
+  <div class="head"><h2>Equipe</h2></div><div class="team" id="equipeLista"></div>
+</section>
+
+<section id="diferenciais" class="sec deep">
+  <div class="head"><h2>O que você encontra aqui</h2></div>
+  <div class="trio">
+    <article><h3>Prevenção em primeiro lugar</h3><p>Consultas de rotina para evitar problemas antes que eles apareçam.</p></article>
+    <article><h3>Acolhimento durante o atendimento</h3><p>Um ritmo calmo, com tempo para dúvidas e para ajustes ao longo da consulta.</p></article>
+    <article><h3>Acompanhamento contínuo</h3><p>Seu histórico fica organizado para que cada retorno seja mais simples.</p></article>
+  </div>
+</section>
+
+<section id="galeria" class="sec">
+  <div class="head"><h2>Conheça o ambiente</h2></div>
+  <div class="gal" id="gal"></div>
+</section>
+
+<section id="contato" class="sec sage">
+  <div class="contact">
+    <div>
+      <h2>Seu próximo passo começa com uma conversa.</h2>
+      <p>Entre em contato com nossa equipe para esclarecer suas dúvidas e consultar os horários disponíveis.</p>
+      <div class="actions"><a class="btn btn-dark" data-wa href="#">Agendar pelo WhatsApp</a><a class="btn btn-ghost-dark" data-tel href="#">Ligar agora</a></div>
+    </div>
+    <form id="form" novalidate>
+      <label>Nome<input name="nome" autocomplete="name" required></label>
+      <label>Telefone<input name="tel" type="tel" autocomplete="tel" inputmode="tel" required></label>
+      <label>Como podemos ajudar?<textarea name="msg" rows="3" placeholder="Ex.: quero marcar uma avaliação"></textarea></label>
+      <p class="note">Ao enviar, o WhatsApp abre com sua mensagem pronta. Nada é armazenado neste site. Não envie dados de saúde por aqui.</p>
+      <button class="btn btn-dark" type="submit">Continuar no WhatsApp</button>
+      <p class="status" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
+
+<section id="local" class="sec split rev">
+  <div class="copy">
+    <h2>Como chegar</h2>
+    <address id="end"></address>
+    <ul class="info" id="info"></ul>
+    <div class="actions"><a class="btn" id="maps" target="_blank" rel="noopener" href="#">Abrir no Google Maps</a></div>
+  </div>
+  <div class="map" id="mapa"></div>
+</section>
+</main>
+
+<footer><span data-c="nome">Clínica Odontológica</span><span id="redes"></span><span>© <span id="ano"></span></span></footer>
+<a class="fab" data-wa href="#" aria-label="Agendar pelo WhatsApp">WhatsApp</a>
+<dialog id="lb"><button aria-label="Fechar">×</button><img alt=""></dialog>
+<script src="js/main.js"></script>
+</body>
+</html>
